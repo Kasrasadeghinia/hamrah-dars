@@ -8,7 +8,8 @@ source.include_exts = py,json,png,jpg,kv,ttf
 
 version = 1.4
 
-requirements = python3,kivy==2.3.0,plyer,pyjnius==1.5.0,arabic-reshaper,python-bidi
+# قفل کردن نسخه پایتون روی 3.11
+requirements = python3==3.11.5,kivy==2.3.0,plyer,pyjnius==1.5.0
 
 orientation = portrait
 fullscreen = 0
@@ -20,8 +21,8 @@ android.archs = arm64-v8a
 android.accept_sdk_license = True
 android.ndk = 25b
 
-# این خط مشکل اصلی را حل می‌کند
-p4a.branch = develop
+# برگشت به شاخه پایدار master
+p4a.branch = master
 android.useandroidx = true
 
 [buildozer]
