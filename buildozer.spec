@@ -8,8 +8,8 @@ source.include_exts = py,json,png,jpg,kv,ttf
 
 version = 1.4
 
-# قفل کردن نسخه پایتون روی 3.11
-requirements = python3==3.11.5,hostpython3==3.11.5,kivy==2.3.0,plyer,pyjnius==1.5.0
+# قفل کردن هر دو نسخه پایتون (هاست و اندروید) روی 3.11.5 برای جلوگیری از تداخل
+requirements = python3==3.11.5,hostpython3==3.11.5,kivy==2.3.0,plyer,pyjnius==1.5.0,arabic-reshaper,python-bidi
 
 orientation = portrait
 fullscreen = 0
@@ -21,7 +21,7 @@ android.archs = arm64-v8a
 android.accept_sdk_license = True
 android.ndk = 25b
 
-# برگشت به شاخه پایدار master
+# استفاده از شاخه پایدار ابزار ساخت
 p4a.branch = master
 android.useandroidx = true
 
