@@ -31,6 +31,13 @@ jobs:
       run: |
         pip install --upgrade buildozer "cython<3"
 
+    # این مرحله کش‌های خراب قبلی را پاک می‌کند
+    - name: Clean old cache
+      run: |
+        rm -rf .buildozer
+        rm -rf ~/.buildozer
+        rm -rf bin
+
     - name: Build APK
       run: buildozer -v android debug
 
