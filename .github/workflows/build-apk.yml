@@ -27,14 +27,13 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
 
-    # به‌روزرسانی ابزارهای پایتون برای جلوگیری از خطای get_requires_for_build_wheel
     - name: Install Buildozer and Cython
       run: |
         python -m pip install --upgrade pip
         pip install --upgrade setuptools wheel
         pip install --upgrade buildozer "cython<3"
 
-    # پاک کردن فایل‌های خراب بیلدهای قبلی
+    # این مرحله بسیار مهم است: پاک کردن کش‌های خراب بیلدهای قبلی
     - name: Clean old cache
       run: |
         rm -rf .buildozer
