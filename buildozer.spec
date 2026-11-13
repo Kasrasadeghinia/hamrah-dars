@@ -21,7 +21,7 @@ android.accept_sdk_license = True
 android.ndk = 25b
 
 # این دو خط مشکل AAB و پایتون را حل می‌کنند
-p4a.branch = develop
+p4a.branch = master
 android.useandroidx = true
 
 [buildozer]
