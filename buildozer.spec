@@ -8,7 +8,7 @@ source.include_exts = py,json,png,jpg,kv,ttf
 
 version = 1.4
 
-requirements = python3,kivy==2.3.0,plyer,pyjnius,arabic-reshaper,python-bidi
+requirements = python3,kivy==2.3.0,plyer,pyjnius==1.5.0,arabic-reshaper,python-bidi
 
 orientation = portrait
 fullscreen = 0
@@ -20,8 +20,8 @@ android.archs = arm64-v8a
 android.accept_sdk_license = True
 android.ndk = 25b
 
-# این دو خط مشکل AAB و پایتون را حل می‌کنند
-p4a.branch = master
+# این خط مشکل اصلی را حل می‌کند
+p4a.branch = develop
 android.useandroidx = true
 
 [buildozer]
