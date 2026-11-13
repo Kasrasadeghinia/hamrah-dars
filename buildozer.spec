@@ -6,6 +6,7 @@ source.dir = .
 source.include_exts = py,json,png,jpg,kv,ttf
 version = 1.4
 requirements = python3,kivy,plyer,pyjnius,arabic-reshaper,python-bidi
+p4a.branch = master
 orientation = portrait
 fullscreen = 0
 android.permissions = POST_NOTIFICATIONS,VIBRATE,WRITE_EXTERNAL_STORAGE,INTERNET
